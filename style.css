@@ -10,14 +10,36 @@ body {
 }
 
 .c1 {
-    background-color: black;
+    border: 3px solid black;
+    border-bottom: 1.5px solid black;
+    background-color: white;
     width: 50%;
     height: 20%;
     position: relative;
 }
 
 .c2 {
+    border: 3px solid black;
+    border-bottom: 1.5px solid black;
     background-color: blueviolet;
+    width: 50%;
+    height: 20%;
+    position: relative;
+}
+
+.c3 {
+    border: 3px solid black;
+    border-bottom: 1.5px solid black;
+    background-color: pink;
+    width: 50%;
+    height: 20%;
+    position: relative;
+}
+
+.c4 {
+    border: 3px solid black;
+    border-bottom: 1.5px solid black;
+    background-color: blue;
     width: 50%;
     height: 20%;
     position: relative;
