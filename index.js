@@ -1,5 +1,7 @@
 
 //this a dumb how do I condense this code
+//https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName 
+
 //c1
 
 function changeColor1() {
@@ -15,7 +17,11 @@ function changeColor1() {
 }
 
 function changeBack() {
-    this.style.backgroundColor = '';
+    function primaryColors(items) {
+        return items [Math.floor(Math.random() * items.length)]; 
+    }
+    const items = ['#ff0101', '#fff001', '#0101fd', '#30303a', '#f9f9f9']
+    this.style.backgroundColor = primaryColors(items);
 }
   
 const c1 = document.getElementsByClassName('c1');
@@ -84,3 +90,30 @@ for (let i = 0; i < c4.length; i++) {
     c4[i].addEventListener('mouseover', changeColor4);
     c4[i].addEventListener('mouseout', changeBack)
 }
+
+//c5
+
+function changeColor5() {
+    const r = Math.random() * 255
+    const g = Math.random() * 255
+    const b = Math.random() * 255
+    const randomColor = `rgb(${r}, ${g}, ${b})`
+    const c5 = document.getElementsByClassName('c5');
+    for (let i = 0; i < c5.length; i++) {
+        c5[i].style.backgroundColor = randomColor;
+    }
+    this.style.backgroundColor = randomColor;
+}
+
+const c5 = document.getElementsByClassName('c5');
+for (let i = 0; i < c4.length; i++) {
+    c5[i].addEventListener('mouseover', changeColor5);
+    c5[i].addEventListener('mouseout', changeBack)
+}
+
+//c6
+
+
+//c7
+//c8
+
