@@ -26,6 +26,8 @@ function changeBack() {
     const items = ['#ff0101', '#fff001', '#0101fd', '#30303a', '#f9f9f9', '#f9f9f9', '#f9f9f9']
     this.style.backgroundColor = primaryColors(items);
 }
+
+//https://www.w3resource.com/javascript-exercises/javascript-array-exercise-35.php 
   
 const c1 = document.getElementsByClassName('c1');
 for (let i = 0; i < c1.length; i++) {
